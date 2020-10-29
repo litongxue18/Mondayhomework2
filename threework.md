@@ -82,5 +82,7 @@ List<course> Course_and_teacher_binding() {
 
 
 ## 7.编程感想  
-
+1.通过编程熟悉了getset方法，加深了对toString方法的使用。  
+2.利用了大专时期所学的list集合。  
+3.在编程过程中出现了许多问题和报错，经过同学的帮助以及csdn的查询，逐步排错改错。
 
