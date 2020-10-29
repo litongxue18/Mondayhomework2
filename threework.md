@@ -77,8 +77,8 @@ List<course> Course_and_teacher_binding() {
         teacher_1.setTeach_course(math);
 ``` 
 ## 6.运行截图   
-![bolckchain]（https://github.com/litongxue18/Mondayhomework2/blob/main/%E6%88%AA%E5%9B%BE1.png）
-![bolckchain]（https://github.com/litongxue18/Mondayhomework2/blob/main/%E6%88%AA%E5%9B%BE2.png）
+![image]（https://github.com/litongxue18/Mondayhomework2/blob/main/%E6%88%AA%E5%9B%BE1.png）
+!![image]（https://github.com/litongxue18/Mondayhomework2/blob/main/%E6%88%AA%E5%9B%BE2.png）
 
 
 ## 7.编程感想  
