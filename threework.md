@@ -46,9 +46,8 @@ select_course:设置了课程信息、输出学生所选课程的信息、教师
 在主方法中，初始化课程类、学生类、老师类中的对象和方法。  
 以上都运用了getset方法、tostring方法和list集合。
 
-
-## 5.实验流程图  
-## 6.实验核心代码  
+ 
+## 5.实验核心代码  
 ```
 public String getId() {
         return id;
@@ -76,14 +75,12 @@ List<course> Course_and_teacher_binding() {
         teacher teacher_1 = new teacher("老师1号", "邹老师", "男", "1239....");
         course math = new course("1号课程", " 高等数学 ", "10号楼", teacher_1, "40m", "4");
         teacher_1.setTeach_course(math);
-```
-
-## 7.实验注释  
-
-## 8.运行截图   
-
+``` 
+## 6.运行截图   
+![bolckchain](https://github.com/litongxue18/Mondayhomework2/blob/main/1603981088(1).png)
+![bolckchain](https://github.com/litongxue18/Mondayhomework2/blob/main/1603981059(1).png)
 
 
-## 9.编程感想  
+## 7.编程感想  
 
 
