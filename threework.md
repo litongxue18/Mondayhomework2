@@ -1,4 +1,4 @@
- ＃MondayJavahomework2
+ ＃第二次实验课 李灵臣 计G2020322084
 ## 1.实验要求
 1.编写实验说明中实体类以及测试主类（注意类之间继承关系的适用）  
 2.在测试主类中，实例化多个类实体，模拟学生选课操作、打印课程信息（信息包括：编号、课程名称、上课地点、时间、授课教师 等）；模拟学生退课操作，再打印课程信息。  
@@ -77,8 +77,8 @@ List<course> Course_and_teacher_binding() {
         teacher_1.setTeach_course(math);
 ``` 
 ## 6.运行截图   
-![bolckchain](https://github.com/litongxue18/Mondayhomework2/blob/main/1603981088(1).png)
-![bolckchain](https://github.com/litongxue18/Mondayhomework2/blob/main/1603981059(1).png)
+![bolckchain]
+![bolckchain]
 
 
 ## 7.编程感想  
