@@ -1,5 +1,6 @@
 package Threework;
-public class person {/*¸¸Àà£ºÈËÔ±£¨±àºÅ¡¢ĞÕÃû¡¢ĞÔ±ğ¡¢ÊÖ»úºÅÂë£©*/
+//çˆ¶ç±»ï¼šäººå‘˜ï¼ˆç¼–å·ã€å§“åã€æ€§åˆ«ã€æ‰‹æœºå·ç ï¼‰
+public class person {
     private String id;
     private String name;
     private String sex;
@@ -47,10 +48,10 @@ public class person {/*¸¸Àà£ºÈËÔ±£¨±àºÅ¡¢ĞÕÃû¡¢ĞÔ±ğ¡¢ÊÖ»úºÅÂë£©*/
     @Override
     public String toString() {
         return "person{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", sex=" + sex +
-                ", phone='" + phone + '\'' +
+                "æ•™å¸ˆç¼–å·ï¼š'" + id + '\'' +
+                ", å§“åï¼š'" + name + '\'' +
+                ", æ€§åˆ«ï¼š" + sex +
+                ", æ‰‹æœºå·ï¼š'" + phone + '\'' +
                 '}';
     }
 }

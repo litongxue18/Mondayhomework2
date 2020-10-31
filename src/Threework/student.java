@@ -1,31 +1,35 @@
 package Threework;
-//×ÓÀà£ºÑ§Éú£¨±àºÅ¡¢ĞÕÃû¡¢ĞÔ±ğ¡¢ËùÑ¡¿Î³Ì¡¢Ö°Îñ£©
+
+import Threework.course;
+import Threework.person;
+
+//å­ç±»ï¼šå­¦ç”Ÿï¼ˆç¼–å·ã€å§“åã€æ€§åˆ«ã€æ‰€é€‰è¯¾ç¨‹ã€èŒåŠ¡ï¼‰
 public class student extends person {
-    //ËùÑ¡¿Î³Ì
+    //æ‰€é€‰è¯¾ç¨‹
     private course select_course;
-    //Ö°Îñ
+    //èŒåŠ¡
     private String duty;
 
     public student(String id, String name, String sex, String phone) {
         super(id, name, sex, phone);
     }
 
-    //Ñ§ÉúËùÑ¡¿Î³ÌµÄµÃµ½
+    //å­¦ç”Ÿæ‰€é€‰è¯¾ç¨‹çš„å¾—åˆ°
     public course getSelect_course() {
         return select_course;
     }
 
-    //Ñ§ÉúËùÑ¡¿Î³ÌµÄÉèÖÃ
+    //å­¦ç”Ÿæ‰€é€‰è¯¾ç¨‹çš„è®¾ç½®
     public void setSelect_course(course select_course) {
         this.select_course = select_course;
     }
 
-    //Ñ§ÉúÖ°ÎñµÄµÃµ½
+    //å­¦ç”ŸèŒåŠ¡çš„å¾—åˆ°
     public String getDuty() {
         return duty;
     }
 
-    //Ñ§ÉúÖ°ÎñµÄÉèÖÃ
+    //å­¦ç”ŸèŒåŠ¡çš„è®¾ç½®
     public void setDuty(String duty) {
         this.duty = duty;
     }

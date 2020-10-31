@@ -7,12 +7,12 @@ public class select_course {
         information_init init = new information_init();
         List<course> course = init.Course_and_teacher_binding();
         List<student> student = init.student_init();
-        //¿Î³ÌĞÅÏ¢
+        //è¯¾ç¨‹ä¿¡æ¯
         for (course i : course) {
             System.out.println(i.toString());
         }
-        System.out.println("----------------Ñ§ÉúÑ¡¿Î----------------");
-        //¼ÙÉèÑ§Éú±àºÅ1¡¢4Ñ¡ÁËÊıÑ§£¬2¡¢5Ñ¡ÁËÓ¢Óï£¬3¡¢6Ñ¡ÁËÓïÎÄ
+        System.out.println("----------------å­¦ç”Ÿé€‰è¯¾----------------");
+        //å‡è®¾å­¦ç”Ÿç¼–å·1ã€4é€‰äº†å¤§å­¦æ•°å­¦ï¼Œ2ã€5å¤§å­¦è¯­æ–‡ï¼Œ3ã€6é€‰äº†å¤§å­¦è‹±è¯­
         for (student i : student) {
             if (Integer.parseInt(i.getId()) % 3 == 1) {
                 i.setSelect_course(course.get(0));
@@ -21,36 +21,36 @@ public class select_course {
             } else {
                 i.setSelect_course(course.get(2));
             }
-            //Êä³öÑ§ÉúËùÑ¡¿Î³ÌµÄĞÅÏ¢
-            System.out.println("Ñ§Éú" + i.getName() + "ËùÑ¡¿Î³Ì£º" + i.getSelect_course().toString());
+            //è¾“å‡ºå­¦ç”Ÿæ‰€é€‰è¯¾ç¨‹çš„ä¿¡æ¯
+            System.out.println("å­¦ç”Ÿ" + i.getName() + "æ‰€é€‰è¯¾ç¨‹ï¼š" + i.getSelect_course().toString());
         }
-        System.out.println("----------------Ñ§ÉúÍË¿Î----------------");
-        //Ñ§ÉúÍË¿Î²Ù×÷
+        System.out.println("----------------å­¦ç”Ÿé€€è¯¾----------------");
+        //å­¦ç”Ÿé€€è¯¾æ“ä½œ
         for (student i : student) {
             i.setSelect_course(null);
-            System.out.println("Ñ§Éú" + i.getName() + "ËùÑ¡¿Î³Ì£º" + i.getSelect_course());
+            System.out.println("å­¦ç”Ÿ" + i.getName() + "æ‰€é€‰è¯¾ç¨‹ï¼š" + i.getSelect_course());
         }
 
     }
 }
 
-//ĞÅÏ¢³õÊ¼»¯
+//ä¿¡æ¯åˆå§‹åŒ–
 class information_init {
-    //Ã¿Î»ÀÏÊ¦°ó¶¨×Ô¼ºËùÊÚ¿Î³Ì
+    //æ¯ä½è€å¸ˆç»‘å®šè‡ªå·±æ‰€æˆè¯¾ç¨‹
     List<course> Course_and_teacher_binding() {
-        //1ÀÏÊ¦a°ó¶¨¿Î³Ìmath
-        teacher teacher_1 = new teacher("1", "a", "ÄĞ", "123");
-        course math = new course("1", "math", "Aµã", teacher_1, "40m", "4");
+        //è€å¸ˆ1å·ç»‘å®šè¯¾ç¨‹å¤§å­¦æ•°å­¦
+        teacher teacher_1 = new teacher("è€å¸ˆ1å·", "é‚¹è€å¸ˆ", "ç”·", "1239....");
+        course math = new course("1å·è¯¾ç¨‹", "å¤§å­¦æ•°å­¦ ", "10å·æ¥¼", teacher_1, "40m", "4");
         teacher_1.setTeach_course(math);
-        //2ÀÏÊ¦b°ó¶¨¿Î³Ìenglish
-        teacher teacher_2 = new teacher("2", "b", "ÄĞ", "132");
-        course english = new course("2", "english", "Aµã", teacher_2, "40m", "2");
+        //è€å¸ˆ2å·ç»‘å®šè¯¾ç¨‹å¤§å­¦è‹±è¯­
+        teacher teacher_2 = new teacher("è€å¸ˆ2å·", "ç§¦è€å¸ˆ", "ç”·", "1322....");
+        course english = new course("2å·è¯¾ç¨‹", "å¤§å­¦è‹±è¯­", "09å·æ¥¼", teacher_2, "40m", "2");
         teacher_2.setTeach_course(english);
-        //3ÀÏÊ¦c°ó¶¨¿Î³Ìchinese
-        teacher teacher_3 = new teacher("3", "c", "ÄĞ", "144");
-        course chinese = new course("3", "chinese", "Aµã", teacher_3, "40m", "5");
+        //è€å¸ˆ3å·ç»‘å®šè¯¾ç¨‹å¤§å­¦è¯­æ–‡
+        teacher teacher_3 = new teacher("è€å¸ˆ3å·", "é™ˆè€å¸ˆ", "ç”·", "1367....");
+        course chinese = new course("3å·è¯¾ç¨‹", "å¤§å­¦è¯­æ–‡ ", "11å·æ¥¼", teacher_3, "40m", "5");
         teacher_3.setTeach_course(chinese);
-        //½«°ó¶¨Íê³ÉµÄ¿Î³ÌÊä³ö
+        //å°†ç»‘å®šå®Œæˆçš„è¯¾ç¨‹è¾“å‡º
         List<course> course = new ArrayList<course>();
         course.add(math);
         course.add(english);
@@ -58,16 +58,16 @@ class information_init {
         return course;
     }
 
-    //Ã¿¸öÑ§Éú½øĞĞĞÅÏ¢³õÊ¼»¯£¬²¢·µ»ØÑ§Éú
+    //æ¯ä¸ªå­¦ç”Ÿè¿›è¡Œä¿¡æ¯åˆå§‹åŒ–ï¼Œå¹¶è¿”å›å­¦ç”Ÿ
     List<student> student_init() {
-        //Ñ§ÉúµÄĞÅÏ¢×¢²á
-        student student_1 = new student("1", "stu1", "ÄĞ", "11111");
-        student student_2 = new student("2", "stu2", "ÄĞ", "11132");
-        student student_3 = new student("3", "stu3", "Å®", "11441");
-        student student_4 = new student("4", "stu4", "Å®", "15111");
-        student student_5 = new student("5", "stu5", "ÄĞ", "11412");
-        student student_6 = new student("6", "stu6", "ÄĞ", "11341");
-        //·µ»ØÑ§ÉúÊµÁĞ
+        //å­¦ç”Ÿçš„ä¿¡æ¯æ³¨å†Œ
+        student student_1 = new student("1", "æåŒå­¦", "ç”·", "11111");
+        student student_2 = new student("2", "ç‹åŒå­¦", "ç”·", "11132");
+        student student_3 = new student("3", "å¼ åŒå­¦", "å¥³", "11441");
+        student student_4 = new student("4", "å²³åŒå­¦", "å¥³", "15111");
+        student student_5 = new student("5", "ç™½åŒå­¦", "ç”·", "11412");
+        student student_6 = new student("6", "èµµåŒå­¦", "ç”·", "11341");
+        //è¿”å›å­¦ç”Ÿå®åˆ—
         List<student> student = new ArrayList<student>();
         student.add(student_1);
         student.add(student_2);
@@ -78,3 +78,4 @@ class information_init {
         return student;
     }
 }
+

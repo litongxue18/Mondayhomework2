@@ -1,6 +1,9 @@
 package Threework;
-//�γ̣���š��γ����ơ��Ͽεص㡢ʱ�䡢�ڿν�ʦ���γ�ѧ�֣�
-public class course<teacher> {
+
+import Threework.teacher;
+
+//课程（编号、课程名称、上课地点、时间、授课教师、课程学分）
+public class course {
     private String id;
     private String course_name;
     private String course_address;
@@ -68,12 +71,12 @@ public class course<teacher> {
     @Override
     public String toString() {
         return "course{" +
-                "id='" + id + '\'' +
-                ", course_name='" + course_name + '\'' +
-                ", course_address='" + course_address + '\'' +
-                ", course_teacher=" + course_teacher +
-                ", course_time='" + course_time + '\'' +
-                ", course_grade='" + course_grade + '\'' +
+                "课程编号：'" + id + '\'' +
+                ", 课程名字：'" + course_name + '\'' +
+                ", 课程地点：'" + course_address + '\'' +
+                ", 课程老师：" + course_teacher +
+                ", 课程时间：'" + course_time + '\'' +
+                ", 课程等级：'" + course_grade + '\'' +
                 '}';
     }
 }
